@@ -10,7 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useauth";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-import { db } from "../firebase/page";
+import { db } from "../firebase";
 import { FaToggleOff, FaToggleOn, FaTrash } from "react-icons/fa";
 import { deleteTodo, toggleTodoStatus } from "../api/todo";
 const TodoList = () => {
